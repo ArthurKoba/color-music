@@ -88,9 +88,9 @@ void colorMusic(ColorMusicConfig &cfg) {
 
 void loop() {
 //  glideColorMode(cfg.leds, cfg.colorModes.glideIndex, cfg.colorModes.glideDirection, 15);
-  colorMusic(cfg);
+//  colorMusic(cfg);
 //  cfg.leds = {255, 255, 255};
-//  transfusionColorMode(cfg.leds, cfg.colorModes.transfusionIndex);
-//  writeValuesToLeds(cfg.leds);
+  transfusionColorMode(cfg.leds, cfg.colorModes.transfusionIndex);
+  writeValuesToLeds(cfg.leds);
 
 }
